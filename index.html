@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Toepassing</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>jQuery Toepassing</h1>
+    </header>
+
+    <main>
+        <div id="content">
+            <p>jQuery voorbeeld.</p>
+            <button id="changeText">Pas tekst aan</button>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2023 Jop Hartveld. All rights reserved.
+    </footer>
+
+    <script>
+        $(document).ready(function(){
+            $("#changeText").click(function(){
+                $("#content p").text("Tekst is veranderd door jQuery!");
+            });
+        });
+    </script>
+
+</body>
+</html>
